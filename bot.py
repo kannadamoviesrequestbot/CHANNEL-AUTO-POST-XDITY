@@ -24,9 +24,9 @@ log = logging.getLogger("ChannelAutoPost")
 # start the bot
 log.info("Starting...")
 try:
-    apiid = config("APP_ID", cast=int)
-    apihash = config("API_HASH")
-    bottoken = config("BOT_TOKEN")
+    apiid = config("APP_ID", "7041911")
+    apihash = config("API_HASH", "abab2561c71e3004a55d4ff9763d5383")
+    bottoken = config("BOT_TOKEN", "7010173297:AAEwtQSHl1CbcOwWG57PFakKrqQ1t_tGjZI")
     frm = config("FROM_CHANNEL", cast=lambda x: [int(_) for _ in x.split(" ")])
     tochnls = config("TO_CHANNEL", cast=lambda x: [int(_) for _ in x.split(" ")])
     datgbot = TelegramClient(None, apiid, apihash).start(bot_token=bottoken)
