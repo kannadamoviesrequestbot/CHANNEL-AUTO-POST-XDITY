@@ -22,11 +22,11 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 print("Starting...")
 
 # Basics
-APP_ID = config("APP_ID", default=None, cast=int)
-API_HASH = config("API_HASH", default=None)
-SESSION = config("SESSION")
-FROM_ = config("FROM_CHANNEL")
-TO_ = config("TO_CHANNEL")
+APP_ID = config("APP_ID", "7041911")
+API_HASH = config("API_HASH", "abab2561c71e3004a55d4ff9763d5383")
+SESSION = config("SESSION", "BQCWDQceGf_ClO8QhEp7nkIbkqI3vQNu8GXk67VOL9FE1BmtqwGQh-Xiju6bTrT8xm_n2nBheoDGmaIhVxY-vw2niFRr9tkSK6FSgHiw36zO679wjzAjASgyr4i72iCpvusHUVmAicpWbUnBorg1cxHW-K3CKzPXHMxAEZhhogE0R80CCOE_Q_oJnn77iYEMEV0UrEaNOj7dH27iBbPelYoKZHn2p9W6iual2d3kMt3NEeVq8qFnV7bj99QGRqYmmY6r5NzS4CMwZJ7-_sECSeRTSJVP_IoL85YbDjvDMICJnvXnkheeoFjj306KjoW9swcYomTCofqzqhr61YlzdpNEAAAAAXzndm8A")
+FROM_ = config("FROM_CHANNEL", "-1001193622774 -1002009629707")
+TO_ = config("TO_CHANNEL", "-1002172471256")
 
 FROM = [int(i) for i in FROM_.split()]
 TO = [int(i) for i in TO_.split()]
